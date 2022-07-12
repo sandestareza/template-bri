@@ -27,11 +27,14 @@ function Login() {
         if (json.status === 200) {
             document.getElementById('btn').innerHTML = 'Login'
             router.push('/mPin')
+        } else{
+            document.getElementById('btn').innerHTML = 'Login'
+            console.log(json.error)
         }
 
       } catch (error) {
           document.getElementById('btn').innerHTML = 'Login'
-          console.log(error);
+          console.log(error.message);
       }
   }
 

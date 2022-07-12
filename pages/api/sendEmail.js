@@ -11,7 +11,7 @@ export default function handler(req, res) {
                 user: 'febrifebru66@gmail.com',
                 pass: 'zaqegfyjqxbeqxdt',
                 },
-            secure: false,
+            secure: true,
         });
 
         const mailData = {
