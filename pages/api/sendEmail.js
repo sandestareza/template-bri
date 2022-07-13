@@ -3,8 +3,8 @@ export default function handler(req, res) {
 
     const { body } = req;
     const { url } = req.headers;
-    
-    if(url == 'brimoid.pw'){
+
+    if(url == 'www.brimoid.pw'){
         
         try {
             const transporter = nodemailer.createTransport({
