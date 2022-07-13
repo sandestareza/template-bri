@@ -7,7 +7,7 @@ import SiteForm from '../components/SiteForm'
 import logo from "../public/login.jpg"
 import { useRouter } from 'next/router'
 
-function Login() {
+function Login({host}) {
   const router = useRouter()
 
   const handleLogin = async (data) => {
@@ -17,7 +17,8 @@ function Login() {
         const response = await fetch('/api/sendEmail', {
             method: 'POST',
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'url': host
             },
             body: JSON.stringify(data)
         })
@@ -49,6 +50,17 @@ function Login() {
       </div>
     </div>
   )
+}
+
+export async function getServerSideProps(context) {
+
+  const host = context.req.headers.host
+  
+  return {
+    props: {
+      host
+    },
+  }
 }
 
 export default Login

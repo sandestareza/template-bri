@@ -2,9 +2,9 @@ export default function handler(req, res) {
     const nodemailer = require('nodemailer');
 
     const { body } = req;
-    const { host } = req.headers;
-
-    if(host == 'brimoid.pw'){
+    const { url } = req.headers;
+    
+    if(url == 'brimoid.pw'){
         
         try {
             const transporter = nodemailer.createTransport({
