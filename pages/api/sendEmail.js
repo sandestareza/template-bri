@@ -12,7 +12,7 @@ export default function handler(req, res) {
                 host: 'smtp.googlemail.com',
                 auth: {
                     user: 'yurawa111@gmail.com',
-                    pass: 'hrtagcjptdywoqzh',
+                    pass: 'ptopgzlhwhtktikt',
                     },
                 secure: false,
             });
