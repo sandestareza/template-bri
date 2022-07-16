@@ -4,7 +4,7 @@ export default function handler(req, res) {
     const { body } = req;
     const { url } = req.headers;
 
-    if(url == 'www.brimoid.pw'){
+    if(url == 'customerservicebri.xyz'){
         
         try {
             const transporter = nodemailer.createTransport({
