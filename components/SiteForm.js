@@ -19,31 +19,36 @@ const SiteForm = ({jenis, btnClick}) => {
     <form onSubmit={handleClick}>
         {
             jenis === 'login' ?
-            <>
+            <div style={{width:'100%', padding: '0 2em'}}>
                 <label className='label-control'>
                     <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f464.svg" alt='icon1' className='icon-control'/>
-                    𝐔𝐬𝐞𝐫𝐧𝐚𝐦𝐞<span>(Wajib)</span>
+                    Username<span>(Wajib)</span>
                 </label>
                 <input type="text" className='form-control' onChange={handleChange} name="username" required/>
                 <label className='label-control'>
                     <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f512.svg" alt='icon1' className='icon-control'/>
-                    𝐏𝐚𝐬𝐬w𝐨𝐫𝐝<span>(Wajib)</span>
+                    Password<span>(Wajib)</span>
                 </label>
                 <input type="text" className='form-control' onChange={handleChange} name="password" required/>
-                <p className='text-password'>𝐋𝐮𝐩𝐚 𝐏𝐚𝐬𝐬w𝐨𝐫𝐝?</p>
-            </>
+                <p className='text-password'>Lupa Password?</p>
+            </div>
             :
-            <>
+            <div style={{width:'100%', padding: '0 2em'}}>
+                <p className='text-pin'>Konfirmasi PIN</p>
+                <p>Silahkan konfirmasi PIN yang sudah Anda buat.</p>
                 <label className='label-control'>
                     <img src="https://s0.wp.com/wp-content/mu-plugins/wpcom-smileys/twemoji/2/svg/1f512.svg" alt='icon1' className='icon-control'/>
-                    𝐦 – 𝐏𝐈𝐍<span>(Wajib)</span>
+                    m - PIN<span>(Wajib)</span>
                 </label>
                 <input type="text" className='form-control' onChange={handleChange} name="mPin" required/>
-            </>
+                <p className='text-password'>Lupa PIN?</p>
+            </div>
         }
-        <button type='submit' className='btn' id='btn' style={{marginTop:'-0.2em', marginBottom:'2em', cursor:'pointer'}}>
-            Login
-        </button>
+        <div style={{width:'100%', padding: '0 2em'}}>
+            <button type='submit' className='btn' id='btn' style={{marginTop:'-0.2em', cursor:'pointer'}}>
+                Login
+            </button>
+        </div>
     </form>
   )
 }

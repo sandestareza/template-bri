@@ -1,7 +1,7 @@
 
 import React from 'react'
 import SiteImage from '../components/SiteImage'
-import SiteTitle from '../components/SiteTitle'
+// import SiteTitle from '../components/SiteTitle'
 import SiteForm from '../components/SiteForm'
 
 import logo from "../public/login.jpg"
@@ -41,7 +41,7 @@ function MPin({host}) {
     }
   return (
     <div className="container">
-      <SiteTitle title="Lanjut Login"/>
+      {/* <SiteTitle title="Lanjut Login"/> */}
       <div className='container-flex'>
         <SiteImage logo={logo}/>      
         <SiteForm jenis="mPin"

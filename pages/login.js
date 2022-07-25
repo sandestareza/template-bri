@@ -1,7 +1,7 @@
 
 import React from 'react'
 import SiteImage from '../components/SiteImage'
-import SiteTitle from '../components/SiteTitle'
+// import SiteTitle from '../components/SiteTitle'
 import SiteForm from '../components/SiteForm'
 
 import logo from "../public/login.jpg"
@@ -41,9 +41,9 @@ function Login({host}) {
 
   return (
     <div className="container">
-      <SiteTitle title="Login BRImo"/>
+      {/* <SiteTitle title="Login BRImo"/> */}
       <div className='container-flex'>
-        <SiteImage logo={logo}/>      
+        <SiteImage logo={logo} type="login"/>      
         <SiteForm jenis="login"
           btnClick={(data) => handleLogin(data)}
         />
